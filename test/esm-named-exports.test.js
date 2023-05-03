@@ -12,16 +12,7 @@ const expect = chai.expect;
 // This array lists the properties that are present on the class, but should not be exported in the esm export file nor in types/index.d.ts.
 const ignoredCjsKeysMap = {
   '@sequelize/core': [
-    // make no sense to export
-    'length',
-    'prototype',
-    'name',
-    'version',
-
-    // importing the data type directly has been removed, and accessing them on the Sequelize constructor is deprecated.
-    // Use DataTypes.x exclusively.
-    'ABSTRACT',
-    'ARRAY',
+  
     'BIGINT',
     'BLOB',
     'BOOLEAN',
